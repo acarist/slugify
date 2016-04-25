@@ -1,7 +1,7 @@
 <?php
+namespace Slugify;
 
-
-class Slugify {
+class SlugIt {
 
 	private static $init        = false;
 	private static $replace_map = array();
