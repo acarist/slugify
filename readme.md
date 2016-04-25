@@ -1,17 +1,16 @@
 # slugify
-URL slugger (latinise) for all utf-8 character from all languages.
-Simple
+Simple URL slugger (latinise) for all utf-8 character from all languages.
 
 ## Usage
 
 ```
-require_once("slugify.php");
+use Slugify\SlugIt;
 
-$init = new Slugify();
+$init = new SlugIt();
 
-echo $init->convert("éçà links");
-echo $init->convert("ağaç işleri üretim atölyesi")";
-echo $init->convert("éïóöëï links");`
+echo $init->convert("éçà links")."\n\r";
+echo $init->convert("ağaç işleri üretim atölyesi")."\n\r";
+echo $init->convert("éïóöëï links");
 
 ```
 ### output
@@ -24,6 +23,7 @@ agac-isleri-uretim-atolyesi
 eiooei-links
 ```
 
-## TODO
-
-- add this package to composer library
+## Composer Install 
+```
+composer require acarist/slugify
+```
